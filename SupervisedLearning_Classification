@@ -1,0 +1,41 @@
+# Classification
+
+## Code:
+1.  from sklearn.linear_model import LinearRegression
+    import statsmodel.api #stats model implementataion of LinearRegression using OLS (ordinary least square)
+
+
+## Logistic Regression
+
+### Regression
+ - Relates the dependent variable to one or more independent(explanatory) variables.
+ - Captures the coorelation between the variables observed in the dataset and determines the statistical significance of that correlation.
+ - Linear regression models often use a least-squares approach to determine the line of best fit. (having very low error or cost function)
+ - Simple linear regression: Y=c+mX+error
+
+Used For:
++ Prediction and Forecasting
++ Inferring relationships between the independent and dependent variables.
+
+### Linear Regression
+- Forms linear relationship of output variable with the independent input variables.
+- Determines the statistical significance of correlation between the dependent/output and independent/input variable (if input variables does good job in prediction).
+- Which independent variable more influences the prediction.
+
+Assumptions:
+1. Linear Relationship between dependent and independent variables. (Visualization: Scatterplot, Heatmap, pairplot)
+2. Data must be normally distributed i.e. features or variables. (Visualization: Q-Q plot, Histogram,etc)
+3. Low or no correlation between independent variables (multi-collinearity: correlation coefficient: +/-1.0). (Check using Variance Inflation Factor)
+4. Mean of the observed value and predicted value must be closer to 0. (mean of residual)
+5. Residual normally distributed.
+6. Homoskedasticity, Variance of the residual throughout the data should be same.
+7. There should be little or no Auto-Correlation is the data. Auto-Correlation Occurs when the residuals are not independent of each other.This usally takes place in time series analysis.
+
+(https://www.investopedia.com/terms/r/regression.asp#:~:text=A%20regression%20is%20a%20statistical,more%20of%20the%20explanatory%20variables.
+https://medium.com/analytics-vidhya/understanding-the-linear-regression-808c1f6941c0
+https://medium.com/@mygreatlearning/step-by-step-regression-analysis-f7e3e3ebf296)
+
+COst/Loss function:
+1. Mean Squared Error 
+2. Root Mean squared error
+Loss function = 1/n*sum(square(pred - y))
