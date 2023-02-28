@@ -4,4 +4,6 @@
 2. What is adversarial learning?
 - The training process where the two models try to weaken each other and, as a result, improve each other is called adversarial learning.
 
+3. The **transposed convolution layer** can be considered as the reverse process of a normal convolution.
+
 
